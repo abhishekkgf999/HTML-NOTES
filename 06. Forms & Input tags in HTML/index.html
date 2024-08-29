@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Lets learn it</title>
+</head>
+<body>
+    <!--
+        The <form> tag in HTML is used to create a form for user input. 
+        A form can contain various input elements like text fields, checkboxes, radio buttons, submit buttons, and more
+    -->
+    <h1>FORM TO APPLY WEB DEV COURSE</h1>
+    <form action="/submit.php" method="post">  
+        <!-- 
+            1.The action attribute in an HTML form specifies the URL to which the form data should be sent 
+            
+            2.while the method attribute defines how that data should be sent, 
+            
+            3.typically either "GET" for retrieving data or "POST" for sending data like this:
+            <form action="/submit.php" method="post">
+        -->
+        <div>
+            <label for="username">Enter your username</label>   <!-- Defines a label for an input element -->
+            <!-- 
+                The <input> tag supports various types, each providing different input options:
+
+                1.text: A single-line text field.
+                2.password: A single-line text field that masks the input.
+                3.submit: A button to submit the form.
+                4.reset: A button to reset the form fields.
+                5.radio: A radio button.
+                6.checkbox: A checkbox.
+                7.button: A clickable button.
+                8.date: A date picker.
+                9.email: A field for email addresses.
+                10.file: A file upload field.
+                11.hidden: A hidden input field.
+                12.number: A field for numeric input.
+                13.tel: A field for telephone numbers.
+                14.url: A field for URLs.
+            -->
+            <input type="text" id="username" name="username" placeholder="Enter your username" autofocus>   
+            <!-- 
+                used to define input field, 
+                1.type = "text" is used a single line text field
+                2."id" is used for uniquely identify that 
+                3."name" Specifies the name of the text area, which is used to identify the form data after submission.
+                4."placeholder" Provides a short hint that describes the expected value of the textarea.
+            --> 
+            
+            <!-- autofocus:- if we type anywhere, then it will automatcially focus to that field-->
+        </div>
+        
+        <div>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name = "gender" value="male">    <!-- type = "radio" is used for a radio button-->
+            <label for="female">Female</label>
+            <input type="radio" id="female" name = "gender" value="female">    <!-- type = "radio" is used for a radio button-->
+        </div>
+        
+        <div>
+            <input type="checkbox" name="Subscribe" id="Subscribe" value = "yes">   <!-- type = "checkbox" is used for creating checkbox-->
+            <label for="Subscribe">Subscribe</label>
+        </div>
+        <div>
+            <!-- 
+                <textarea> tag in HTML is used to define a multi-line text input field, 
+                
+                which allows users to enter larger amounts of text. 
+                
+                This is often used for comments, feedback forms, and other instances where 
+                
+                a single-line text input (<input type="text">) is not sufficient.
+            -->
+            <label for="comment">Enter your comments</label>
+            <textarea id = "comment" name = "comment" rows = "4" cols = "50"></textarea>
+        </div>
+        <div>
+            <!-- 
+                The <select> tag in HTML is used to create a drop-down list within a form. 
+                
+                It allows users to select one or more options from a list.
+
+                The <select> tag is used in combination with the <option> tag to define the list items.
+            -->
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">banana</option>
+                <option value="Cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
+
+

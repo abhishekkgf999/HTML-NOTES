@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    <!--    
+                    #VIDEO TAG IN HTML
+        ->The <video> tag in HTML is used to embed video content on a web page.
+        
+        *The <video> tag supports several attributes to control its behavior and appearance:
+
+            1.src: Specifies the URL of the video file. This is optional if <source> elements are used.
+            2.controls: Displays playback controls such as play, pause, and volume.
+            3.autoplay: Starts playing the video automatically when the page loads.
+            4.loop: Replays the video automatically after it finishes.
+            5.muted: Mutes the audio by default.
+            6.poster: Specifies an image to be shown while the video is downloading or until the user hits the play button.
+            7.width: Sets the width of the video player.
+            8.height: Sets the height of the video player.
+    -->
+    <video src="video.mp4" width = "250" height="555" controls muted poster = "download.jpg"></video>
+
+    <!--
+                    #AUDIO TAG IN HTML
+        ->The <audio> tag in HTML is used to embed sound content on a web page. 
+
+        *The <audio> tag supports several attributes to control its behavior and appearance:
+
+            1.src: Specifies the URL of the audio file. This is optional if <source> elements are used.
+            2.controls: Displays audio playback controls such as play, pause, and volume.
+            3.autoplay: Starts playing the audio automatically when the page loads.
+            4.loop: Replays the audio automatically after it finishes.
+            5.muted: Mutes the audio by default.
+            6.preload: Specifies if and how the author thinks the audio should be loaded when the page loads. It can have the following values:
+                        a.none: The audio should not be preloaded.(Default value)
+                        b.metadata: Only metadata (e.g., length) is preloaded.
+                        c.auto: The whole audio file is preloaded.
+    -->
+    <audio src="sachin.mp3" controls></audio>
+
+    <!--    
+                    #SVG(Scalable Vector Graphics) TAG IN HTML
+            ->The <svg> tag in HTML is used to define vector-based graphics for the web. 
+            ->SVG (Scalable Vector Graphics) allows you to create images and graphics that are scalable, resolution-independent, and can be styled with CSS and manipulated with JavaScript. 
+            ->SVG graphics are defined in XML format.
+
+            SVG consists of a variety of elements and attributes for drawing shapes, paths, and text. Here are some of the common elements:
+
+            1.<circle>: Draws a circle.
+
+                "cx": The x-coordinate of the circle’s center.
+                "cy": The y-coordinate of the circle’s center.
+                "r": The radius of the circle.
+                "stroke": The color of the circle's border.
+                "stroke-width": The width of the circle's border.
+                "fill": The color inside the circle.
+                
+            2.<rect>: Draws a rectangle.
+
+                "x": The x-coordinate of the rectangle’s upper-left corner.
+                "y": The y-coordinate of the rectangle’s upper-left corner.
+                "width": The width of the rectangle.
+                "height": The height of the rectangle.
+                "rx": The x-axis radius of the rectangle's corners.
+                "ry": The y-axis radius of the rectangle's corners.
+
+            3.<line>: Draws a line.
+
+                "x1": The x-coordinate of the start of the line.
+                "y1": The y-coordinate of the start of the line.
+                "x2": The x-coordinate of the end of the line.
+                "y2": The y-coordinate of the end of the line.
+
+            4.<ellipse>: Draws an ellipse.
+
+                "cx": The x-coordinate of the ellipse’s center.
+                "cy": The y-coordinate of the ellipse’s center.
+                "rx": The x-axis radius of the ellipse.
+                "ry": The y-axis radius of the ellipse.
+
+            5.<polygon>: Draws a closed shape with multiple sides.
+
+                "points": A list of points, defining the vertices of the polygon.
+
+            6.<polyline>: Draws an open shape with multiple sides.
+
+                "points": A list of points, defining the vertices of the polyline.
+
+            7.<path>: Draws complex shapes.
+
+                "d": A series of commands and parameters to define the path.
+
+            8.<text>: Draws text.
+
+                "x": The x-coordinate where the text starts.
+                "y": The y-coordinate where the text starts.
+    -->
+    <svg height = "100" width = "100">
+        <circle cx="50" cy="50" r="40" stroke ="black" stroke-width="3" fill="red" />
+    </svg>
+    <img src="img.svg" alt="This is svg image">
+
+    <!--
+                        #ifram IN HTML
+            ->The <iframe> tag in HTML is used to embed another HTML document within the current document. 
+
+            The <iframe> tag supports several attributes to control its behavior and appearance:
+
+            1.src: Specifies the URL of the document to embed.
+
+            2.width: Sets the width of the iframe.
+
+            3.height: Sets the height of the iframe.
+
+            4.name: Defines a name for the iframe, which can be used as a target for links.
+
+            5.sandbox: Applies extra restrictions to the content in the iframe. Possible values include allow-forms, allow-same-origin, allow-scripts, allow-top-navigation, and others.
+
+            6.allow: Specifies a feature policy for the iframe. This attribute can define which features the iframe can use (e.g., geolocation, camera).
+
+            7.allowfullscreen: Allows the iframe to be displayed in fullscreen mode.
+
+            8.loading: Specifies whether the iframe should be loaded immediately (eager) or deferred (lazy).
+    -->
+    <!-- <iframe src="https://www.codewithharry.com" frameborder="0" width = "500"></iframe> -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XZwBNDGuWGU?si=2ciReX0ys5zAs_DZ&amp;start=772" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+</body>
+</html>

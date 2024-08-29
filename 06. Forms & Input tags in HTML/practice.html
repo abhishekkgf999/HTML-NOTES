@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revision</title>
+</head>
+
+<body>
+    <h1>Student Details</h1>
+    <form action="/submit.php" method="post">
+        <div>
+            <label for="Stname">Name:-</label>
+            <input type="text" id="Sname" name="Studentname" placeholder="Enter your name" autofocus>
+        </div>
+        <div>
+            <label for="Male">Male</label>
+            <input type="radio" id="Male" name="Gender" value="Male">
+            <label for="Female">Female</label>
+            <input type="radio" id="Female" name="Gender" value="Female">
+        </div>
+        <div>
+            <label for="Clgname">Clg. Name:-</label>
+            <input type="text" id="Clgname" name="Collegename" placeholder="College name" autofocus>
+        </div>
+        </div>
+        <select name="Language" id="Language">
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+        </select>
+        <div>
+            <div>
+                <label for="comment">Comment here</label>
+                <textarea id="comment" name="comment" rows="4" cols="30"></textarea>
+                <label for="t&c">Terms and condtition</label>
+                <input type="checkbox" id="t&c" name="terms & condition">
+            </div>
+    </form>
+</body>
+
+</html>

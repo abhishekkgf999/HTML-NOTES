@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <img> tag is used for inserting images-->
+    <!-- SYNTAX:- <img src="url" alt="alternatetext"> -->
+    <!-- If a browser cannot find an image, it will display the value of the alt attribute:-->
+    <!-- we can set its dimension using "width" & "height" attribute inside <img> tag-->
+    <img  height = "300" src="image.jpeg" alt="Zoro">
+    <br>
+
+    <!-- <table> tag is used to create tables that display data in rows and columns.-->
+    <table>     <!-- defines the table -->
+        <caption>Example</caption>
+        <thead>
+            <!-- header content-->
+            header
+        </thead>
+        <tbody>     <!-- we can use <tbody> tag for grouping (no effect) -->
+            <tr>        <!-- define row in the table-->
+                <th>Name</th>       <!-- <th> Defines a header cell in a table. The content is typically bold and centered by default.-->
+                <th>Designation</th>
+                <th>Fab Language</th>
+            </tr>
+            <tr>
+                <td>Abhishek</td>       <!-- <td> Defines a standard data cell in a table.-->
+                <td>Web developer</td>
+                <td>C++</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- footer content-->
+            <tr>
+                <td>Sam</td>
+                <td colspan="2">Python</td>
+            </tr>
+            footer
+        </tfoot>
+    </table>
+    <p></p>
+    <!--
+        1. colspan: how many columns a data will take
+        2. rowspan: how many rows a data will take
+        3. caption: we can add caption to our table
+        4. header: we can add header in table as well (used inside <thead>)
+        5. footer: we can add footer in the table (used inside <tfoot>)
+        6. <br>: is used to create a line break
+        7. <tbody>: we can use <tbody> tag for grouping (no effect)
+        8. border: Specifies the border width of the table.
+        9. cellpadding: Specifies the space between the cell content and its borders.
+        10. cellspacing: Specifies the space between the cells.
+        11. width: Specifies the width of the table.
+        12. height: Specifies the height of the table.
+        13. align: Specifies the alignment of the table (left, right, center).
+    -->
+    <br> <!-- is used to create a line break -->
+    <table>
+        <caption>Student details</caption>
+       
+        <tr>        
+            <th>Name</th>       
+            <th>Designation</th>
+            <th>Fab Language</th>
+        </tr>
+        <tr>
+            <td>Abhishek</td>
+            <td>Programmer</td>
+            <td>C++</td>
+        </tr>
+        <tr>
+            <td colspan="2">Varun</td> <!-- colspan: how many columns a data will take -->
+            <!-- <td>Web developer</td> -->
+            <td rowspan="2">Java</td> <!-- rowspan: how many rows a data will take -->
+        </tr>
+        <tr>
+            <td colspan="2">Vivek</td> 
+        </tr>
+    </table>
+
+    <!--        LIST        -->
+    <br>
+    <caption>---------------------LIST------------------------</caption>
+    <!--
+        #THERE ARE 3 TYPES OF LIST:-
+        1. UNORDERED LIST:- Displays items using bullets
+        2. ORDERED LIST:- Displays items in a numerical sequences, and supports various numbering styles like Arabic numerals, Roman numerals, and so on.
+        3. DEFINITION LIST:- Organizes items in a format similar to dictionary, with terms and their corresponding definitions
+
+        **mostly used -> Unordered list and ordered list
+    -->
+
+    <!-- UNORDERED LIST (<ul>)-->
+    <br>
+    <br>
+    <caption>UNORDERED LIST</caption>
+    <!-- 
+        we can customize its bullet points using type attribute
+        1. disc  (by default)
+        2. square
+        3. circle
+    -->
+    <ul type = "square">
+        <li>Abhishek</li>
+        <li>Harry</li>
+        <li>Varun</li>
+    </ul>
+    <!-- ORDERED LIST (<ol>)-->
+    <br>
+    <br>
+    <caption>ORDERED LIST</caption>
+    <!--
+        we can customize its numbering using type attribute
+        1. <type = "I"> :- Uppercase Roman numberals
+        2. <type = "i"> :- Lowercase Roman numberals
+        3. <type = "1"> :- Default 
+        4. <type = "a"> :- Lowercase Alphabetical letters 
+        5. <type = "A"> :- Uppercase Alphabetical letters 
+    -->
+    <ol type = "i">
+        <li>Abhishek</li>
+        <li>Varun</li>
+        <li>Vivek</li>
+    </ol>
+    <!-- DEFINITION LIST (<dl>)-->
+    <br>
+    <br>
+    <caption>DEFINITION LIST</caption>
+    <dl>
+        <dt>HTML</dt>  <!-- DATA TERM:- <dt> -->
+        <dd>Hyper text Markup Language</dd>   <!-- DATA DEFINITION:- <dd> -->
+
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+
+    </dl>
+</body>
+</html>
